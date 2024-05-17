@@ -2,44 +2,9 @@
   export let data;
 </script>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-3 lg:px-0">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pb-2">
   {#if data && data.photos.length > 0}
     {#each data.photos as photo}
-      <div class="overflow-hidden">
-        <img
-          src={'https://images.ctfassets.net/r7p9m4b1iqbp/5IV5co85HjyYBn56Za2Pu6/cc12216918c66cd0505d604d72a5efdd/best-35mm-film-unsplash-eyespeak.jpg?w=1000'}
-          alt={photo.name}
-          class="w-full aspect-3/2"
-        />
-      </div>
-      <div class="overflow-hidden">
-        <img
-          src={'https://images.ctfassets.net/r7p9m4b1iqbp/5IV5co85HjyYBn56Za2Pu6/cc12216918c66cd0505d604d72a5efdd/best-35mm-film-unsplash-eyespeak.jpg?w=1000'}
-          alt={photo.name}
-          class="w-full aspect-3/2"
-        />
-      </div>
-      <div class="overflow-hidden">
-        <img
-          src={'https://images.ctfassets.net/r7p9m4b1iqbp/5IV5co85HjyYBn56Za2Pu6/cc12216918c66cd0505d604d72a5efdd/best-35mm-film-unsplash-eyespeak.jpg?w=1000'}
-          alt={photo.name}
-          class="w-full aspect-3/2"
-        />
-      </div>
-      <div class="overflow-hidden">
-        <img
-          src={'https://images.ctfassets.net/r7p9m4b1iqbp/5IV5co85HjyYBn56Za2Pu6/cc12216918c66cd0505d604d72a5efdd/best-35mm-film-unsplash-eyespeak.jpg?w=1000'}
-          alt={photo.name}
-          class="w-full aspect-3/2"
-        />
-      </div>
-      <div class="overflow-hidden">
-        <img
-          src={'https://images.ctfassets.net/r7p9m4b1iqbp/5IV5co85HjyYBn56Za2Pu6/cc12216918c66cd0505d604d72a5efdd/best-35mm-film-unsplash-eyespeak.jpg?w=1000'}
-          alt={photo.name}
-          class="w-full aspect-3/2"
-        />
-      </div>
       <div class="overflow-hidden">
         <img
           src={'https://images.ctfassets.net/r7p9m4b1iqbp/5IV5co85HjyYBn56Za2Pu6/cc12216918c66cd0505d604d72a5efdd/best-35mm-film-unsplash-eyespeak.jpg?w=1000'}
@@ -52,3 +17,5 @@
     <p>No photos found.</p>
   {/if}
 </div>
+
+<!-- 'https://images.ctfassets.net/r7p9m4b1iqbp/5IV5co85HjyYBn56Za2Pu6/cc12216918c66cd0505d604d72a5efdd/best-35mm-film-unsplash-eyespeak.jpg?w=1000' -->
