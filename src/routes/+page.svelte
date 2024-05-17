@@ -6,11 +6,7 @@
   {#if data && data.photos.length > 0}
     {#each data.photos as photo}
       <div class="overflow-hidden">
-        <img
-          src={'https://images.ctfassets.net/r7p9m4b1iqbp/5IV5co85HjyYBn56Za2Pu6/cc12216918c66cd0505d604d72a5efdd/best-35mm-film-unsplash-eyespeak.jpg?w=1000'}
-          alt={photo.name}
-          class="w-full aspect-3/2"
-        />
+        <img src={photo.url} alt={photo.name} class="w-full aspect-3/2" />
       </div>
     {/each}
   {:else}
@@ -18,4 +14,4 @@
   {/if}
 </div>
 
-<!-- 'https://images.ctfassets.net/r7p9m4b1iqbp/5IV5co85HjyYBn56Za2Pu6/cc12216918c66cd0505d604d72a5efdd/best-35mm-film-unsplash-eyespeak.jpg?w=1000' -->
+<!-- placeholder photo 'https://images.ctfassets.net/r7p9m4b1iqbp/5IV5co85HjyYBn56Za2Pu6/cc12216918c66cd0505d604d72a5efdd/best-35mm-film-unsplash-eyespeak.jpg?w=1000' -->
