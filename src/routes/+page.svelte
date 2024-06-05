@@ -5,8 +5,9 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pb-2">
   {#if data && data.photos.length > 0}
     {#each data.photos as photo}
+      {@const optimisedUrl = photo.url.split('upload/').join('upload/f_auto/')}
       <div class="overflow-hidden">
-        <img src={photo.url} alt={photo.name} class="w-full aspect-3/2" />
+        <img src={optimisedUrl} alt={photo.name} class="w-full aspect-3/2" />
       </div>
     {/each}
   {:else}

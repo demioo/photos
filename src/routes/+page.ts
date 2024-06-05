@@ -9,7 +9,6 @@ const client = createClient({
 
 export async function load() {
   const data = await client.fetch(`*[_type == "photo"]`);
-  console.log('data', data);
 
   if (data) {
     return {
