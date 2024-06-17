@@ -2,6 +2,23 @@
   export let data;
 </script>
 
+<svelte:head>
+  <title>Demi Ogun Photography</title>
+  <meta
+    name=" description"
+    content="Demi Ogun is a photographer based in Clerkenwell, London. He specialises in 35mm film photography."
+  />
+  {@html `<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Demi Ogun Photography",
+    "url": "https://www.demiogunphotography.com",
+    "description": "Demi Ogun is a photographer based in Clerkenwell, London. He specialises in 35mm film photography."
+  }
+</script>`}
+</svelte:head>
+
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pb-2">
   {#if data && data.photos.length > 0}
     {#each data.photos as photo}
