@@ -5,7 +5,7 @@
 <svelte:head>
   <title>Demi Ogun Photography</title>
   <meta
-    name=" description"
+    name="description"
     content="Demi Ogun is a photographer based in Clerkenwell, London. He specialises in 35mm film photography."
   />
   {@html `<script type="application/ld+json">
